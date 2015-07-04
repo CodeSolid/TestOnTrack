@@ -10,15 +10,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
-/**
- * Created by john on 7/2/15.
- */
-
-
 @Controller
-@RequestMapping("/hello")
-public class HelloController {
-    private static final String template = "Hello, %s!";
+@RequestMapping("/groovy")
+public class HelloGroovy {
+    private static final String template = "Hello, groovy %s!"
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping(method=RequestMethod.GET)

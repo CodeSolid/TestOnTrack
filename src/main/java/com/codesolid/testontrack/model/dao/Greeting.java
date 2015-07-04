@@ -1,4 +1,4 @@
-package com.codesolid.testontrack.dal;
+package com.codesolid.testontrack.model.dao;
 
 /**
  * Created by john on 7/2/15.
