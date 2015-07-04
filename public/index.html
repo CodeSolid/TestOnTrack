@@ -32,11 +32,11 @@
               <a href="#">Something</a>
             </li>
             <li>
-              <a href="#">Something Else</a>
+              <a href="#/about">About</a>
             </li>          
           </ul>
           <ul class="nav navbar-nav navbar-right" style="padding-right:15px;">
-            <li><a href="#" target="_blank">Right Nav 1</a></li>
+            <li><a href="https://github.com/CodeSolid/TestOnTrack" target="_blank">Source (Github)</a></li>
             <li><a href="#">Right Nav 2</a></li>
           </ul>
       </div>
@@ -49,9 +49,8 @@
 		<div ng-controller="EventController" >
 			<img ng-src="{{event.imgUrl}}" alt="{{event.name}}" />
 			<div class="row">
-				<h2>Index.html <small>(with some preliminary styling)<small></h2>
-				<p class="lead">Larger Text</p>
-				<p>Normal text</p>
+		<ng-view /> 
+
 			</div>
 			<div>
 			</div>
@@ -65,6 +64,8 @@
 		<script src="/assets/lib/jquery.min.js"></script>
 		<script src="/assets/lib/bootstrap.js"></script>
 		<script src="/assets/lib/angular/angular.js"></script>
+  	    <script src="/assets/lib/angular/angular-route.min.js"></script>
+
 		<script src="/assets/lib/angular/angular-sanitize.js"></script>
 		<script src="/assets/js/app.js"></script>			
 		<script src="/assets/js/controllers/EventController.js"></script>
